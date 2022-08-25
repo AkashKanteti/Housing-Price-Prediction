@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+     href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+     <style>
+       .hi{
+         background-color: #1abc9c;
+         padding-left: 10px
+         background-image:url('house.jpg');
+       }
+       .containerd
+       {
+         text-align:center;
+         font-size: 60px;
+         text-shadow: 4px 2px #4d3664;
+         color: white;
+         bottom:15px;
+       }
+       .conatiner-fluidd{
+         font-size: 30px;
+         padding-top: 10px;
+         padding-left: 100px;
+         padding-right: 100px;
+         text-align: left;
+         text-shadow: 1px 2px #c7004c;
+         color:#ffaaaa;
+       }
+       .form-groups{
+         font-size: 22px;
+         padding-left: 200px;
+         padding-right: 200px;
+       }
+       .kin{
+
+         width: 400px;
+       }
+       .submit{
+         border: 2px solid red;
+         font-size: 24px;
+         padding: 5px 24px 5px 24px;
+       }
+       .submit:hover{
+         border:4px solid green;
+         color:white;
+         background-color:#c7004c;
+       }
+       .divsubmit{
+         padding-top: 20px;
+         padding-left: 200px;
+       }
+       .house{
+        vertical-align: top;
+        float: right;
+        padding-left: 70px;
+        padding-right: 70px;
+        width:750px;
+        max-width: 100%;
+       }
+     </style>
+  </head>
+  <body class=hi>
+    <div class="containerd">
+      <h1 class="containerd">Web application for Predicting housing prices</h1>
+    </div>
+    <div class="conatiner-fluidd">
+      <h4 class="conatiner-fluidd">Enter the following details</h4>
+    </div>
+    <img class="house" src="house.jpeg" alt="">
+    <form class="form-horizontals"  method="post" id='form1'>
+      <div class="form-groups">
+        <label for="No of rooms">No of rooms</label>
+        <input type="number" class="form-control kin"  placeholder="Enter no of rooms"id="No of rooms">
+        <p></p>
+        <label for="Age">Age</label>
+        <input type="number" class="form-control kin" placeholder="Enter Age" id="Age">
+        <p></p>
+        <label for="Area">Area(sq feet)</label>
+        <input type="number" class="form-control kin" placeholder="Enter Area"id="Area">
+        <p></p>
+        <label for="Location">Location</label>
+        <input type="text" class="form-control kin" placeholder="Enter Location"id="Location">
+        <p></p>
+        <label for="Parking">Parking</label>
+        <p>
+          <input type="radio" name="yes_no" checked>Yes</input>
+          <input type="radio" name="yes_no">No</input>
+        </p>
+      </div>
+    </form>
+    <div class="divsubmit">
+      <button type="submit" class="submit" form="form1" value="Submit">Estimate</button>
+    </div>
+  </body>
+</html>
